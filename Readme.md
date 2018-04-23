@@ -1,0 +1,21 @@
+# How to use a custom editor for editing in the PropertyGridControl.
+
+
+<p>This example demonstrates how to use a custom editor for editing in the <strong>PropertyGridControl</strong>.<br><br>This task can be completed in the following ways.<br>1. Use a custom <a href="https://msdn.microsoft.com/en-us/library/ms171840.aspx">UITypeEditor</a>. For this, create a custom <strong>UITypeEditor </strong>descendant and mark a property of a corresponding object with the <strong>System.ComponentModel.Editor</strong> attribute in the following manner:</p>
+
+
+```cs
+    public class File {
+        [System.ComponentModel.Editor(typeof(UIEditors.FilteredFileNameEditor),
+          typeof(System.Drawing.Design.UITypeEditor))]
+        public string Path { get; set; }
+
+```
+
+
+<p> Please refer to the <a href="https://msdn.microsoft.com/en-us/library/system.drawing.design.uitypeeditor%28v=vs.110%29.aspx?f=255&MSPPError=-2147217396">UITypeEditor Class</a> article for more information.</p>
+<p>2. Assign a <strong>ButtonEdit</strong> to a cell as shown in the <a href="https://documentation.devexpress.com/WindowsForms/CustomDocument429.aspx">Assigning Editors to Editor Rows</a>  article and handle its <strong>ButtonClick</strong> event.</p>
+
+<br/>
+
+
