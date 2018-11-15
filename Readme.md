@@ -1,3 +1,10 @@
+<!-- default file list -->
+*Files to look at*:
+
+* [File.cs](./CS/T415077/Data/File.cs) (VB: [File.vb](./VB/T415077/Data/File.vb))
+* [Form1.cs](./CS/T415077/Form1.cs) (VB: [Form1.vb](./VB/T415077/Form1.vb))
+* [FilteredFileNameEditor.cs](./CS/T415077/UIEditors/FilteredFileNameEditor.cs) (VB: [FilteredFileNameEditor.vb](./VB/T415077/UIEditors/FilteredFileNameEditor.vb))
+<!-- default file list end -->
 # How to use a custom editor for editing in the PropertyGridControl.
 
 
