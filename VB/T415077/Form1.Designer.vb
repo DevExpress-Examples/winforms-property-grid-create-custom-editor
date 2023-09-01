@@ -1,5 +1,7 @@
-﻿Namespace T415077
-    Partial Public Class Form1
+Namespace T415077
+
+    Partial Class Form1
+
         ''' <summary>
         ''' Required designer variable.
         ''' </summary>
@@ -10,14 +12,14 @@
         ''' </summary>
         ''' <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         Protected Overrides Sub Dispose(ByVal disposing As Boolean)
-            If disposing AndAlso (components IsNot Nothing) Then
-                components.Dispose()
+            If disposing AndAlso (Me.components IsNot Nothing) Then
+                Me.components.Dispose()
             End If
+
             MyBase.Dispose(disposing)
         End Sub
 
-        #Region "Windows Form Designer generated code"
-
+'#Region "Windows Form Designer generated code"
         ''' <summary>
         ''' Required method for Designer support - do not modify
         ''' the contents of this method with the code editor.
@@ -37,19 +39,19 @@
             Me.barButtonItem1 = New DevExpress.XtraBars.BarButtonItem()
             Me.propertyGridControl1 = New DevExpress.XtraVerticalGrid.PropertyGridControl()
             Me.openFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).BeginInit()
-            DirectCast(Me.propertyGridControl1, System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).BeginInit()
+            CType((Me.propertyGridControl1), System.ComponentModel.ISupportInitialize).BeginInit()
             Me.SuspendLayout()
             ' 
             ' barManager1
             ' 
-            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() { Me.bar1, Me.bar2, Me.bar3})
+            Me.barManager1.Bars.AddRange(New DevExpress.XtraBars.Bar() {Me.bar1, Me.bar2, Me.bar3})
             Me.barManager1.DockControls.Add(Me.barDockControlTop)
             Me.barManager1.DockControls.Add(Me.barDockControlBottom)
             Me.barManager1.DockControls.Add(Me.barDockControlLeft)
             Me.barManager1.DockControls.Add(Me.barDockControlRight)
             Me.barManager1.Form = Me
-            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() { Me.barEditItem1, Me.barEditItem2, Me.barButtonItem1})
+            Me.barManager1.Items.AddRange(New DevExpress.XtraBars.BarItem() {Me.barEditItem1, Me.barEditItem2, Me.barButtonItem1})
             Me.barManager1.MainMenu = Me.bar2
             Me.barManager1.MaxItemId = 5
             Me.barManager1.StatusBar = Me.bar3
@@ -157,33 +159,39 @@
             Me.Controls.Add(Me.barDockControlTop)
             Me.Name = "Form1"
             Me.Text = "Form1"
-            DirectCast(Me.barManager1, System.ComponentModel.ISupportInitialize).EndInit()
-            DirectCast(Me.propertyGridControl1, System.ComponentModel.ISupportInitialize).EndInit()
+            AddHandler Me.Load, New System.EventHandler(AddressOf Me.Form1_Load)
+            AddHandler Me.Shown, New System.EventHandler(AddressOf Me.Form1_Shown)
+            CType((Me.barManager1), System.ComponentModel.ISupportInitialize).EndInit()
+            CType((Me.propertyGridControl1), System.ComponentModel.ISupportInitialize).EndInit()
             Me.ResumeLayout(False)
             Me.PerformLayout()
-
         End Sub
 
-        #End Region
-
+'#End Region
         Private barManager1 As DevExpress.XtraBars.BarManager
+
         Private bar1 As DevExpress.XtraBars.Bar
+
         Private bar2 As DevExpress.XtraBars.Bar
+
         Private barEditItem1 As DevExpress.XtraBars.BarEditItem
 
         Private barEditItem2 As DevExpress.XtraBars.BarEditItem
+
         Private bar3 As DevExpress.XtraBars.Bar
+
         Private barDockControlTop As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlBottom As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlLeft As DevExpress.XtraBars.BarDockControl
+
         Private barDockControlRight As DevExpress.XtraBars.BarDockControl
+
         Private barButtonItem1 As DevExpress.XtraBars.BarButtonItem
+
         Private propertyGridControl1 As DevExpress.XtraVerticalGrid.PropertyGridControl
+
         Private openFileDialog1 As System.Windows.Forms.OpenFileDialog
-
-
-
-
     End Class
 End Namespace
-
