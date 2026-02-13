@@ -65,7 +65,7 @@ This example demonstrates how to implement a UI Type Editor (`FilteredFileNameE
 * [Form1.cs](./CS/T415077/Form1.cs) (VB: [Form1.vb](./VB/T415077/Form1.vb))
 * [FilteredFileNameEditor.cs](./CS/T415077/UIEditors/FilteredFileNameEditor.cs) (VB: [FilteredFileNameEditor.vb](./VB/T415077/UIEditors/FilteredFileNameEditor.vb))
 <!-- feedback -->
-## Does this example address your development requirements/objectives?
+## Does This Example Address Your Development Requirements/Objectives?
 
 [<img src="https://www.devexpress.com/support/examples/i/yes-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-property-grid-create-custom-editor&~~~was_helpful=yes) [<img src="https://www.devexpress.com/support/examples/i/no-button.svg"/>](https://www.devexpress.com/support/examples/survey.xml?utm_source=github&utm_campaign=winforms-property-grid-create-custom-editor&~~~was_helpful=no)
 
